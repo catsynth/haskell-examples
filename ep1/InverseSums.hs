@@ -1,10 +1,11 @@
 import Prelude hiding (sum)
 
+naturals = [1..]
+
 
 sum :: Num a => Int -> [a] -> a
 sum n series = foldl (+) 0 (take n series)
 
-naturals = [1..]
 
 harmonics = [1/x    | x <- naturals]
 inverseSquares = [1/x**2 | x <- naturals]
