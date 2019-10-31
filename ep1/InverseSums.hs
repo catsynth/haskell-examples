@@ -15,6 +15,7 @@ harmonicSeries n = sum n harmonics
 inverseSquaresSeries n = sum n inverseSquares
 inverseCubesSeries n = sum n inverseCubes
 
+zeta s n = sum n [1/x**s | x <- naturals]
 
 powerSeries n = [1/n**x  | x <- naturals]
 
