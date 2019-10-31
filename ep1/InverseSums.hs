@@ -17,7 +17,9 @@ inverseCubesSeries n = sum n inverseCubes
 
 zeta s n = sum n [1/x**s | x <- naturals]
 
-powerSeries n = [1/n**x  | x <- naturals]
+powers p = [1/p**x  | x <- naturals]
+powerSeries p n = sum n (powers p)
+
 
 power2 = powerSeries 2
 power3 = powerSeries 3
